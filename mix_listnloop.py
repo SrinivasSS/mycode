@@ -5,3 +5,5 @@ def main():
 
     for driverandip in networklist:
         print('SSH to ' +driverandip[1] + ' using driver ' +driverandip[0])
+
+main()

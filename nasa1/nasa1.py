@@ -4,9 +4,10 @@ import urllib.request
 import json
 import webbrowser
 
-apodurl = 'https://api.nasa.gov/planetary/apod?date=2017-01-03&'
+apodurl = 'https://api.nasa.gov/planetary/apod?date='
+date = input('\nEnter date of pic in YYYY-MM-DD: ')
 mykey = 'api_key=fThjtoWz3LSzkFG7afxkFT4rRDUvg9an81AeQaOa'
-apodurlobj = urllib.request.urlopen(apodurl+mykey)
+apodurlobj = urllib.request.urlopen(apodurl+date+'&'+mykey)
 
 apodread = apodurlobj.read()
 
